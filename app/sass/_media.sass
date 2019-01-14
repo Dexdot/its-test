@@ -1,0 +1,263 @@
+@import "vars"
+@import "mixins"
+
+
+@media only screen and (min-width : 1400px)
+	.header
+		padding: 60px
+		&__nav li a
+			font-size: 15px
+			margin-left: 46px
+	.pagination
+		li a 
+			width: 14px
+			height: 14px
+	.left
+		left: 10%
+		&-title
+			font-size: 82px
+			margin-bottom: 60px
+	.right
+		right: 15%
+		&-title
+			font-size: 46px
+			margin-bottom: 40px
+		&-text
+			font-size: 15px
+			margin-bottom: 46px
+			max-width: 600px
+			width: 600px
+	.btn
+		width: 280px
+		height: 60px
+		font-size: 15px
+		
+	// Scene
+	.ellipse
+		&-outer
+			width: 1100px
+			height: 1100px
+		&-inner
+			width: 860px
+			height: 860px
+	.brain svg
+		width: 580px
+		height: 645px
+
+	// Arcs
+	.arc
+		&-video
+			top: 48%
+			width: 1000px
+			height: 899px
+			transform: translate(-63%, -50%)
+@media only screen and (min-width : 1600px)
+	.header
+		padding: 80px
+		&__logo
+			font-size: 30px
+		&__nav li a
+			font-size: 16px
+			margin-left: 50px
+	.pagination
+		li a 
+			width: 16px
+			height: 16px
+	.left
+		&-title
+			font-size: 90px
+			margin-bottom: 60px
+	.right
+		&-title
+			font-size: 50px
+			margin-bottom: 40px
+		&-text
+			font-size: 16px
+			margin-bottom: 46px
+	.btn
+		width: 300px
+		height: 64px
+		font-size: 16px
+
+	.ellipse
+		&-outer
+			width: 1300px
+			height: 1300px
+		&-inner
+			width: 1040px
+			height: 1040px
+	.brain svg
+		width: 680px
+		height: 755px
+	
+	.arc
+		&-lg
+			height: 1700px
+			transform: translate(-55%, -50%)
+		&-md
+			height: 1500px
+			transform: translate(-66%, -50%)
+		&-video
+			top: 47%
+			width: 1200px
+			height: 1100px
+			transform: translate(-67%, -50%)
+@media only screen and (min-width : 1900px)
+	.arc
+		&-lg
+			height: 1700px
+			transform: translate(-45%, -50%)
+		&-md
+			height: 1500px
+			transform: translate(-57%, -50%)
+		&-video
+			top: 47%
+			width: 1400px
+			height: 1300px
+			transform: translate(-67%, -50%)
+
+
+// Arcs
+@media only screen and (max-width : 1200px)
+	.arc
+		&-lg
+			transform: translate(-70%, -50%)
+		&-md
+			transform: translate(-78%, -50%)
+		&-video
+			top: 50%
+			transform: translate(-70%, -50%)
+
+// Scene
+@media only screen and (max-width : 1120px)
+	.ellipse
+		&-outer
+			width: 800px
+			height: 800px
+		&-inner
+			width: 560px
+			height: 560px
+	.brain svg
+		width: 340px
+		height: 380px
+
+
+@media only screen and (max-width : 1080px)
+	.btn
+		width: 200px
+		height: 50px
+	.left
+		left: 60px
+		&-title
+			font-size: 66px
+			margin-bottom: 40px
+	.right
+		top: 55%
+		right: 60px
+		&-title
+			font-size: 36px
+			margin-bottom: 24px
+		&-text
+			margin-bottom: 36px
+			max-width: 400px
+
+
+// Arcs
+@media only screen and (max-width : 950px)
+	.arc
+		&-lg
+			transform: translate(-75%, -50%)
+			width: 1400px
+			height: 1200px
+		&-md
+			transform: translate(-82%, -50%)
+			width: 1400px
+			height: 1000px
+		&-video
+			transform: translate(-80%, -50%)
+
+// Scene
+@media only screen and (max-width : 870px)
+	.ellipse
+		&-outer
+			width: 700px
+			height: 700px
+		&-inner
+			width: 520px
+			height: 520px
+	.brain svg
+		width: 300px
+		height: 333px
+
+@media only screen and (max-width : 840px)
+	.btn
+		width: 180px
+		height: 46px
+	.left
+		left: 40px
+		top: 33%
+		&-title
+			font-size: 8vmax
+			margin-bottom: 26px
+	.right
+		right: 40px
+		&-title
+		&-text
+			max-width: 300px
+@media only screen and (max-width : 680px)
+	.header__logo span
+		display: none
+	.left
+		top: 40%
+		left: 50%
+		transform: translate(-50%, -50%)
+		text-align: center
+		&-title
+			text-align: center
+			font-size: 9vmax
+			margin-bottom: 40px
+			br, span
+				display: none
+		&-btn
+			display: block
+			margin: 0 auto
+	.right
+		display: none
+		visibility: hidden
+		pointer-events: none
+	.pagination
+		bottom: 60px
+
+	.scene
+		display: none
+		pointer-events: none
+		visibility: hidden
+@media only screen and (max-width : 480px)
+
+	.header
+		padding: 20px
+		z-index: 11
+		&__logo
+			font-size: 20px
+		&__nav
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100vh
+			background: #283593
+			flex-direction: column
+			justify-content: center
+			transition: all 0.4s ease-out
+			transform: translateX(100%)
+			&.is-active
+				transform: translateX(0)
+			li a 
+				font-size: 6vmax
+				margin-left: 0
+	.hamburger
+		display: block
+		top: 20px
+		right: 20px
+		z-index: 12
+

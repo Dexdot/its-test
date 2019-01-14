@@ -1,0 +1,50 @@
+// Osnova Pro
+@font-face 
+	font-family: 'Osnova Pro'
+	src: url('../fonts/osnova/OsnovaPro.woff2') format('woff2'),url('../fonts/osnova/OsnovaPro.woff') format('woff')
+	font-weight: 400
+	font-style: normal
+
+@font-face 
+	font-family: 'Osnova Pro'
+	src: url('../fonts/osnova/OsnovaPro-Bold.woff2') format('woff2'),url('../fonts/osnova/OsnovaPro-Bold.woff') format('woff')
+	font-weight: 700
+	font-style: normal
+
+=osnova($weight)
+	@if $weight == reg
+		font-family: 'Osnova Pro', sans-serif
+		font-weight: 400
+	@if $weight == bold
+		font-family: 'Osnova Pro', sans-serif
+		font-weight: 700
+
+
+// Gilroy
+@font-face 
+	font-family: 'Gilroy'
+	src: url('../fonts/gilroy/Gilroy-Medium.woff2') format('woff2'),url('../fonts/gilroy/Gilroy-Medium.woff') format('woff')
+	font-weight: 500
+	font-style: normal
+
+@font-face 
+	font-family: 'Gilroy'
+	src: url('../fonts/gilroy/Gilroy-SemiBold.woff2') format('woff2'),url('../fonts/gilroy/Gilroy-SemiBold.woff') format('woff')
+	font-weight: 600
+	font-style: normal
+
+=gilroy($weight)
+	@if $weight == md
+		font-family: 'Gilroy', sans-serif
+		font-weight: 500
+	@if $weight == sb
+		font-family: 'Gilroy', sans-serif
+		font-weight: 600
+
+=mask
+	position: absolute
+	width: 110%
+	height: 110%
+	background: #283593
+	top: 0
+	left: -5px
